@@ -1,0 +1,122 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 5%;
+  font-size: 2rem;
+  backdrop-filter: blur(3rem);
+  box-shadow: 0 0 3rem #000;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.logo {
+  font-size: 3rem;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.navList {
+  flex: 1;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navList li {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin: 1rem 2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.navList li:hover {
+  color: #f39c12;
+}
+
+/* Dropdown Menu */
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.show {
+  display: block;
+}
+
+.dropdownItem {
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.dropdownItem:hover {
+  background-color: #f39c12;
+}
+
+/* Sub Dropdown */
+.subDropdownMenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.dropdownItem:hover .subDropdownMenu {
+  display: block;
+}
+
+.subDropdownMenu li {
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+.subDropdownMenu li:hover {
+  background-color: #f39c12;
+}
+
+/* Search Box */
+.searchBox {
+  display: flex;
+  align-items: center;
+  background-color: #242424;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+}
+
+.searchBox input {
+  padding: 0.6rem;
+  background: transparent;
+  border: none;
+  outline: 0;
+  color: white;
+  font-size: 1.8rem;
+  max-width: 30rem;
+}
+
+.searchBox input::placeholder {
+  color: white;
+}
+
+.searchIcon {
+  color: white;
+  margin-left: 1rem;
+  cursor: pointer;
+}

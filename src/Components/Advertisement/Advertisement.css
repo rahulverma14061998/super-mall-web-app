@@ -1,0 +1,77 @@
+.carousel-inner img {
+  height: 80vh;
+  object-fit: cover;
+}
+
+/* Custom caption styling */
+.custom-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.caption-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f39c12;
+  text-align: center;
+}
+
+.caption-text {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+/* Button Controls */
+.custom-control {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: 10px; /* Adjusts the position from the left side */
+}
+
+.carousel-control-next {
+  right: 10px; /* Adjusts the position from the right side */
+}
+
+.custom-control:hover {
+  background-color: rgba(243, 156, 18, 0.9);
+}
+
+/* Fade-in animation for captions */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Indicator styling */
+.carousel-indicators button {
+  background-color: #f39c12;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}

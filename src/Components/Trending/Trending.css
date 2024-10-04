@@ -1,0 +1,11 @@
+.slick-slide > div {
+  margin: 0 1rem;
+}
+
+.slick-item {
+  padding: 1rem;
+}
+
+.slick-dots li button:before {
+  color: #4f46e5; /* Indigo color for dots */
+}
