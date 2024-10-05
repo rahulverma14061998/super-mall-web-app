@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Trending.css";
 
 export default function Trending() {
-  let { productData } = useContext(Store);
+  let { products } = useContext(Store);
 
   const settings = {
     dots: true,
@@ -52,7 +52,7 @@ export default function Trending() {
         </p>
       </div>
       <Slider {...settings}>
-        {productData.map((product) => (
+        {products.map((product) => (
           <div key={product.id} className="slick-item">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition hover:scale-105 hover:shadow-2xl duration-300">
               <div className="h-56  flex justify-center items-center">
@@ -63,7 +63,7 @@ export default function Trending() {
                 />
               </div>
               <div className="p-6 text-center">
-                <h5 className="text-xl font-semibold mb-2">{product.title}</h5>
+                <h5 className="text-xl font-semibold mb-2 productTitle">{product.title}</h5>
                 <p className="text-lg text-gray-700 font-bold mb-4">
                   ${product.price}
                 </p>

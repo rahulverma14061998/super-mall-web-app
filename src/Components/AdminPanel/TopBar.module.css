@@ -1,0 +1,28 @@
+.topBar {
+  background-color: #242424;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.topBar h2 {
+  font-size: 1.8rem;
+}
+
+.topBarIcons {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #f39c12;
+}

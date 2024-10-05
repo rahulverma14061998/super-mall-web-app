@@ -13,7 +13,7 @@ export default function NavBar() {
   return (
     <div className={styles.navbar}>
       <MdOutlineLocalMall className={styles.logo} />
-      SmartBuy Mall
+      SmartBuy
       <ul className={styles.navList}>
         <li>Home</li>
         <li>Products</li>

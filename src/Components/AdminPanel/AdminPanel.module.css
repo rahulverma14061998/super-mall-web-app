@@ -1,0 +1,16 @@
+.adminPanel {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #f4f4f9;
+}

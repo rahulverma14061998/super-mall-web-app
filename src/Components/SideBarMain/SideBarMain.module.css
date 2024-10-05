@@ -1,0 +1,15 @@
+/* Sidebar.module.css */
+.sidebar-collapsed {
+  width: 5rem;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar-expanded {
+  width: 16rem;
+  transition: width 0.3s ease-in-out;
+}
+
+.sidebar-item:hover {
+  background-color: #4c51bf;
+  transition: background-color 0.3s;
+}
